@@ -1,0 +1,26 @@
+
+# NOTE: written by carbon shell
+[colors]
+[colors.primary]
+foreground = "#ffffff"
+background = "#131313"
+
+[colors.normal]
+red     = "#eb6e70"
+yellow  = "#ebee70"
+green   = "#6bee70"
+cyan    = "#6beeef"
+blue    = "#6b86ef"
+magenta = "#eb6eef"
+white   = "#ebeeef"
+black   = "#6b6e70"
+
+[colors.bright]
+red     = "#eb6e70"
+yellow  = "#ebee70"
+green   = "#6bee70"
+cyan    = "#6beeef"
+blue    = "#6b86ef"
+magenta = "#eb6eef"
+white   = "#ebeeef"
+black   = "#6b6e70"

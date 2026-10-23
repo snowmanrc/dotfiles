@@ -1,0 +1,31 @@
+[hypr_override]
+src  = "hypr"
+dest = "~/.config/hypr"
+
+[zshrc]
+src  = "zsh/.zshrc"
+dest = "~/.zshrc"
+
+[zshenv]
+src  = "zsh/.zshenv"
+dest = "~/.zshenv"
+
+[zsh_autocomplete]
+src  = "zsh/.zlogin"
+dest = "~/.zlogin"
+
+[alacritty]
+src  = "alacritty"
+dest = "~/.config/alacritty"
+
+[fastfetch]
+src  = "fastfetch"
+dest = "~/.config/fastfetch"
+
+[starship]
+src  = "starship/starship.toml"
+dest = "~/.config/starship.toml"
+
+[rofi]
+src  = "rofi"
+dest = "~/.config/rofi"

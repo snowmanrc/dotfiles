@@ -1,0 +1,52 @@
+
+configuration {
+
+	// Behavior
+	case-sensitive: false;
+	cycle: false;
+
+	threads: 0;
+	
+	filter: "";
+	scroll-method: 0;
+	steal-focus: false;
+
+	sort: true;
+	sort-method: "name";
+	normalize-match: false;
+
+	matching: "fuzzy";
+	tokenize: true;
+
+	disable-history: false;
+	sorting-method: "fzf";
+	max-history-size: 25;
+
+	lazy-grab: true;
+    parse-hosts: false;
+    parse-known-hosts: false;
+
+	cache-dir: "/tmp/rofi-cache";
+
+	// Style
+	
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
+	markup: "pango";
+	
+	terminal: "rofi-sensible-terminal";
+	font: "Mono 12";
+	click-to-exit: true;
+
+	timeout {
+		action: "kb-cancel";
+		delay:  30;
+	}
+
+	// Binds
+
+	hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "!MousePrimary"; 
+    kb-cancel: ["MousePrimary", "Escape" ];
+}
