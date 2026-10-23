@@ -9,7 +9,7 @@ hl.on(
 	"hyprland.start",
 	function()
 		for _, cmd in ipairs(cmds) do
-            hl.dsp.exec_cmd(cmd)
+            hl.exec_cmd(cmd)
         end
 	end
 )
