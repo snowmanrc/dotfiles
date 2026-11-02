@@ -37,6 +37,7 @@ alias grep='grep --color'
 
 alias py='python'
 alias gs='git status'
+alias ff='fastfetch'
 
 
 # Helper Functions
@@ -53,8 +54,9 @@ pyenv() {
 }
 
 # running single c as a script lang 
+export RUNC_COMPILER="gcc"
 runc() {
-	tcc "$1" -o /tmp/program
+	$RUNC_COMPILER "$1" -o /tmp/program
 	if [[ -e /tmp/program ]]; then
 		/tmp/program "${@:2}"
 		rm /tmp/program
@@ -62,11 +64,6 @@ runc() {
 	else 
 		return 1
 	fi
-}
-
-# basic info
-info() {
-	echo "You're $(whoami) at $(hostname). System is $(awk -F= '/^NAME=/ {print $2}' /etc/os-release | tr -d '"'), active shell is $SHELL and current directory is $(pwd)."
 }
 
 # prompt startup

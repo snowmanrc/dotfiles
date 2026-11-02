@@ -2,10 +2,10 @@
 add_newline = false
 
 format = '''
-$username@$hostname \[$directory\] ($status)
-$character 
+$username@$hostname \[$directory\]$git_branch$git_status
+$character
 '''
-right_format = '$git_branch$git_status'
+right_format = '($status)'
 
 
 [character]
