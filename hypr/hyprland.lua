@@ -5,6 +5,7 @@ hl.config(
 )
 
 require("modules.autostart")
+require("modules.env")
 require("modules.bindings")
 require("modules.monitors")
 require("modules.input")
