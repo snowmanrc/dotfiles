@@ -1,4 +1,5 @@
 
+-- Apps and Menus
 hl.bind(
     "SUPER + T",
     hl.dsp.exec_cmd("alacritty")
@@ -6,11 +7,31 @@ hl.bind(
 
 hl.bind(
     "SUPER + Q",
-    hl.dsp.exec_cmd("~/.dotfiles/bin/launcher")
+    hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")
 )
 
+hl.bind(
+    "SUPER + W",
+    hl.dsp.exec_cmd("noctalia msg panel-toggle control-center")
+)
+
+hl.bind(
+    "SUPER + C",
+    hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard")
+)
+
+hl.bind(
+    "SUPER + P",
+    hl.dsp.exec_cmd("noctalia msg panel-toggle session")
+)
+
+hl.bind(
+    "SUPER + E",
+    hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper")
+)
 
 -- Window Management
+
 hl.bind(
     "SUPER + K",
     hl.dsp.window.close()
@@ -62,14 +83,15 @@ end
 
 
 -- Layout Control
+
 hl.bind(
     "SUPER + B",
-    hl.dsp.layout("togglesplit")
+    hl.dsp.layout("swapsplit")
 )
 
 hl.bind(
     "SUPER + N",
-    hl.dsp.layout("swapsplit")
+    hl.dsp.layout("togglesplit")
 )
 
 hl.bind(

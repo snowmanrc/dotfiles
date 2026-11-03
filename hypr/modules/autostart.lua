@@ -1,7 +1,6 @@
 
 local cmds = {
 	"hyprctl setcursor Bibata-Modern-Classic-Hypr 24",
-	"alacritty",
 	"noctalia"
 }
 

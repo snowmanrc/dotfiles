@@ -53,10 +53,10 @@ pyenv() {
     fi
 }
 
-# running single c as a script lang 
-export RUNC_COMPILER="gcc"
+# running single c/c++ as a script lang 
+export RUNC="gcc"
 runc() {
-	$RUNC_COMPILER "$1" -o /tmp/program
+	$RUNC "$1" -o /tmp/program
 	if [[ -e /tmp/program ]]; then
 		/tmp/program "${@:2}"
 		rm /tmp/program

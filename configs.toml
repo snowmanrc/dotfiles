@@ -10,10 +10,6 @@ dest = "~/.zshrc"
 src  = "zsh/.zshenv"
 dest = "~/.zshenv"
 
-[zsh_autocomplete]
-src  = "zsh/.zlogin"
-dest = "~/.zlogin"
-
 [alacritty]
 src  = "alacritty"
 dest = "~/.config/alacritty"
