@@ -1,6 +1,6 @@
 
 local cmds = {
-	"hyprctl setcursor Bibata-Modern-Classic-Hypr 24",
+	"hyprctl setcursor Bibata-Modern-Classic 24",
 	"noctalia"
 }
 
