@@ -2,26 +2,6 @@
 -- Window Rules
 
 hl.window_rule({
-    match = { class = "^(org\\.gnome\\.)" },
-    rounding = 12
-})
-
-hl.window_rule({
-    match = { class = "^(gnome-control-center)$" },
-    tile = true
-})
-
-hl.window_rule({
-    match = { class = "^(org\\.gnome\\.Nautilus)$" },
-    float = true
-})
-
-hl.window_rule({
-    match = { class = "^(pavucontrol)$" },
-    float = true
-})
-
-hl.window_rule({
     match = { class = "^(nm-connection-editor)$" },
     float = true
 })
@@ -33,21 +13,6 @@ hl.window_rule({
 
 hl.window_rule({
     match = { class = "^(xdg-desktop-portal)$" },
-    float = true
-})
-
-hl.window_rule({
-    match = { class = "^(org\\.gnome\\.Calculator)$" },
-    float = true
-})
-
-hl.window_rule({
-    match = { class = "^(gnome-calculator)$" },
-    float = true
-})
-
-hl.window_rule({
-    match = { class = "^(galculator)$" },
     float = true
 })
 
@@ -79,6 +44,13 @@ hl.window_rule({
     size = { 1080, 920 },
 })
 
+hl.window_rule({
+    match = { 
+        class = "^org\\.kde\\.(kcalc|haruna|kclock|calindori|gwenview|kamoso)$" 
+    },
+    float = true,
+    size = { 760, 540 },
+})
 
 -- Layer Rules
 
@@ -96,4 +68,4 @@ hl.layer_rule({
     ignore_alpha = 0.5,
     blur = true,
     blur_popups = true,
-  })
+})

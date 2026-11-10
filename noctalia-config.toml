@@ -1,0 +1,362 @@
+[accessibility]
+ui_scale = 1.2500000111758709
+
+[audio]
+enable_screenshot_sounds = false
+
+[bar]
+order = [ "main" ]
+
+    [bar.main]
+    center = [ "workspaces" ]
+    end = [
+        "widget",
+        "screenshot",
+        "wallpaper",
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "session"
+    ]
+    margin_edge = 8
+    margin_ends = 8
+    padding = 23
+    position = "bottom"
+    radius = 18
+    scale = 1.2000000104308128
+    shadow = false
+    start = [ "launcher", "clock", "media" ]
+    thickness = 52
+    widget_spacing = 16
+
+        [bar.main.dead_zone.actions]
+        left = "panel-toggle control-center home"
+
+[battery]
+warning_threshold = 15
+
+[brightness]
+minimum_brightness = 0.099999997764825821
+sync_all_monitors = true
+
+[control_center]
+hidden_tabs = [ "screen-time" ]
+sidebar = "full"
+sidebar_section = "full"
+width = 750
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "audio"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+[desktop_widgets]
+enabled = false
+
+[hot_corners]
+delay_ms = 350
+enabled = true
+
+    [hot_corners.bottom_left]
+    action = "window_switcher"
+
+    [hot_corners.bottom_right]
+    action = "window_switcher"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend", "Screen Dim" ]
+pre_action_fade_seconds = 0
+
+    [idle.behavior."Screen Dim"]
+    action = "command"
+    command = "noctalia msg brightness-set 50"
+    enabled = false
+    resume_command = "noctalia msg brightness-set 100"
+    timeout = 10.0
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "Lahore, Pakistan"
+
+[lockscreen]
+blurred_desktop = true
+fingerprint = false
+transition = [ "melt" ]
+transition_duration = 1200
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001", "lockscreen-widget-0000000000000002" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 828.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface"
+        background_opacity = 1.0
+        background_radius = 15.0
+        center_password_text = true
+        input_opacity = 0.67000000000000004
+        input_radius = 7.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = false
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 358.10546875
+    box_width = 588.5185546875
+    cx = 960.0
+    cy = 311.052734375
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        background_padding = 0
+        background_radius = 0
+        center_text = true
+        clock_style = "digital"
+        color = "primary"
+        format = "{:%I:%M}"
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 38.0859375
+    box_width = 218.28515625
+    cx = 960.0
+    cy = 439.04296875
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        background_opacity = 1.0
+        color = "tertiary"
+        description = ""
+        font_family = "Iosevka"
+        shadow = false
+        title = "Hello World"
+
+[nightlight]
+enabled = true
+
+[notification]
+background_opacity = 0.99999997764825821
+border_color = "surface_container"
+follow_focused_output = true
+position = "bottom_right"
+
+[osd]
+background_opacity = 0.79999998211860657
+border_color = "surface_container"
+offset_x = 1
+offset_y = 25
+scale = 1.1500000096857548
+
+[plugin_settings."oldirtty/color_picker"]
+lowercase-hex = true
+panel_placement = "attached"
+
+[plugins]
+enabled = [ "oldirtty/color_picker" ]
+
+[shell]
+avatar_path = "/home/snowmanrc/Pictures/snow.png"
+button_borders = false
+card_borders = false
+corner_radius_scale = 2.0
+font_family = "Iosevka"
+input_borders = false
+panel_anchor_bar = "main"
+password_style = "random"
+polkit_agent = true
+popup_borders = false
+show_close_buttons = false
+
+    [shell.animation]
+    speed = 0.65000000968575478
+
+    [shell.launcher]
+    category_icons_only = true
+    default_view = "all"
+    fetch_exchange_rates = false
+    show_navigation_labels = false
+    sort_by_usage = false
+    track_usage = false
+
+    [shell.panel]
+    border_color = "primary"
+    border_width = 2.0
+    borders = false
+    clipboard_placement = "attached"
+    floating_offset = 0
+    launcher_placement = "attached"
+    polkit_placement = "attached"
+    session_position = "center"
+    transparency_mode = "soft"
+    wallpaper_position = "center"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 42
+
+    [shell.screenshot]
+    confirm_region = true
+    directory = "/home/snowmanrc/Pictures/Screenshots"
+
+    [shell.session]
+    grid = true
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 3.0
+        enabled = true
+        label = "Suspend"
+        shortcut = "2"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "command"
+        command = "systemctl hibernate"
+        countdown_seconds = 3.0
+        enabled = true
+        label = "Hibernate"
+        shortcut = "3"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 3.0
+        enabled = true
+        shortcut = "4"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 3.0
+        enabled = true
+        shortcut = "5"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 3.0
+        enabled = true
+        shortcut = "6"
+        variant = "default"
+
+    [shell.shadow]
+    direction = "down_right"
+
+    [shell.window_switcher]
+    show_all_outputs = false
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Spiderman"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "qt" ]
+
+[wallpaper]
+directory = "/home/snowmanrc/Pictures/Wallpapers"
+transition = [ "melt" ]
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+
+    [wallpaper.last]
+    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+
+[widget.clock]
+font_scale = 0.97999999999999998
+format = "{:%I:%M %p - %d %b - %A} "
+
+[widget.launcher]
+glyph = "cube"
+
+[widget.media]
+anchor = true
+hide_when_no_media = true
+title_scroll = "always"
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
+
+[widget.workspaces]
+active_pill_size = 3.3000000000000003
+empty_color = "surface_container_high"
+occupied_color = "surface_container_high"
+scale = 1.1500000000000001
