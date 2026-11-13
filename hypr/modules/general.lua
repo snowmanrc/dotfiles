@@ -35,13 +35,13 @@ hl.config(
 
 			blur = {
 				enabled = true,
-				size = 2,
+				size = 5,
 				passes = 2,
-				vibrancy = 1,
+				vibrancy = 0.2,
 			},
 
 			shadow = {
-				enabled = true,
+				enabled = false,
 				range = 20,
 				render_power = 3,
 				offset = {0, 5},

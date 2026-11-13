@@ -1,5 +1,6 @@
 
 -- Apps and Menus
+
 hl.bind(
     "SUPER + T",
     hl.dsp.exec_cmd("alacritty")
@@ -26,9 +27,25 @@ hl.bind(
 )
 
 hl.bind(
-    "SUPER + E",
-    hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper")
+    "SUPER + U",
+    hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen")
 )
+
+hl.bind(
+    "SUPER + SHIFT + U",
+    hl.dsp.exec_cmd("noctalia msg screenshot-region")
+)
+
+hl.bind(
+    "SUPER + ALT + U",
+    hl.dsp.exec_cmd("noctalia msg screenshot-window")
+)
+
+hl.bind(
+    "SUPER + TAB",
+    hl.dsp.exec_cmd("noctalia msg window-switcher")
+)
+
 
 -- Window Management
 
@@ -51,6 +68,7 @@ hl.bind(
 
 
 -- Workspace Navigation
+
 hl.bind(
     "SUPER + SHIFT + right",
     hl.dsp.focus({ workspace = "e+1" })
@@ -70,16 +88,25 @@ hl.gesture(
 )
 
 
-for i = 0, 9 do
+for i = 1, 9 do
 	hl.bind(
 		"SUPER + " .. i,
 		hl.dsp.focus({ workspace = tostring(i) })
 	)
 	hl.bind(
 		"SUPER + SHIFT + " .. i,
-		hl.dsp.window.move({ workspace = tostring(i) })
+		hl.dsp.window.move({ workspace = "10" })
 	)
 end
+
+hl.bind(
+    "SUPER + " .. 0,
+    hl.dsp.focus({ workspace = 10 })
+)
+hl.bind(
+    "SUPER + SHIFT + " .. 0,
+    hl.dsp.window.move({ workspace = "10" })
+)
 
 
 -- Layout Control
@@ -136,6 +163,7 @@ hl.bind(
 
 
 -- Hardware Control
+
 hl.bind(
     "XF86AudioRaiseVolume",
     hl.dsp.exec_cmd("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"),
