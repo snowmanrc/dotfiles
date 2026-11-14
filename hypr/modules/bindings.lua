@@ -95,7 +95,7 @@ for i = 1, 9 do
 	)
 	hl.bind(
 		"SUPER + SHIFT + " .. i,
-		hl.dsp.window.move({ workspace = "10" })
+		hl.dsp.window.move({ workspace = tostring(i) })
 	)
 end
 
