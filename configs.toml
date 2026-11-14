@@ -1,4 +1,4 @@
-[hypr_override]
+[hypr]
 src  = "hypr"
 dest = "~/.config/hypr"
 
@@ -25,3 +25,11 @@ dest = "~/.config/starship.toml"
 [rofi]
 src  = "rofi"
 dest = "~/.config/rofi"
+
+[git]
+src  = "git/.gitconfig"
+dest = "~/.gitconfig"
+
+[noctalia]
+src = "noctalia/settings.toml"
+dest = "~/.local/state/noctalia/settings.toml"

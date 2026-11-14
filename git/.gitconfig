@@ -1,0 +1,13 @@
+[user]
+    name = Abdul Haseeb
+    email = haseeeb8j@gmail.com
+
+[core]
+    editor = nano
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true

@@ -1,3 +1,5 @@
+config_version = 16
+
 [accessibility]
 ui_scale = 1.2500000111758709
 
@@ -332,13 +334,13 @@ transition = [ "melt" ]
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+    path = "/home/snowmanrc/Pictures/Wallpapers/tokyo.jpg"
 
     [wallpaper.last]
-    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+    path = "/home/snowmanrc/Pictures/Wallpapers/tokyo.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/snowmanrc/Pictures/Wallpapers/andre-benz-qi2hmCwlhcE-unsplash.jpg"
+    path = "/home/snowmanrc/Pictures/Wallpapers/tokyo.jpg"
 
 [widget.clock]
 font_scale = 0.97999999999999998
